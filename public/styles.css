@@ -1,0 +1,83 @@
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+form {
+  padding: 40px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #8167cb;
+}
+form input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: #ffffff;
+  width: 250px;
+  border-radius: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+}
+
+form button {
+  appearance: none;
+  outline: 0;
+  margin: auto;
+  display: block;
+  background-color: #d09cfa;
+  border: 0;
+  padding: 10px 15px;
+  color: darkblue;
+  border-radius: 50px;
+  width: 150px;
+  font-size: 18px;
+}
+
+::placeholder {
+  color: darkblue;
+}
+
+.buttonstyle {
+  appearance: none;
+  outline: 0;
+  padding: 20px;
+  border: 0;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.buttonContainer {
+  margin: auto;
+
+  text-align: center;
+}
+
+.container {
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0;
+  width: 30%;
+  position: relative;
+  background-color: #8167cb;
+}
+
+.startingDiv {
+  margin-top: 30vh;
+  padding: 20px 20px 10px 20px;
+}
+
+.signUpForm {
+  margin-top: 21vh;
+}
+.homeDiv {
+  margin-top: 30vh;
+}
+.signInForm {
+  margin-top: 30vh;
+}
