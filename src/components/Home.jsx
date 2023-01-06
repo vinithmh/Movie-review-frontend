@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import api from "../api/loginapp";
 
 function About() {
@@ -26,7 +26,8 @@ function About() {
       .then((res) => console.log("Posting data", res))
       .catch((err) => console.log(err));
 
-    window.location.href = "/home";
+    setMoviename("");
+    setMoviereview("");
   };
 
   return (

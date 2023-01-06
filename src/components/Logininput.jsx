@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import api from "../api/loginapp";
+import { useNavigate } from "react-router-dom";
 
 function Loginininput() {
+  const navigate = useNavigate();
   const intialvalue = "";
 
   const [Email, setEmail] = useState(intialvalue);
@@ -26,8 +28,6 @@ function Loginininput() {
       })
       .then((res) => console.log("Posting data", res))
       .catch((err) => console.log(err));
-
-    window.location.href = "/home";
   };
 
   return (
@@ -45,7 +45,9 @@ function Loginininput() {
           onChange={updatePassword}
           value={Password}
         />
-        <button onClick={postData}>Submit</button>
+        <div onClick={() => navigate("/home")}>
+          <button onClick={postData}>Submit</button>
+        </div>
       </form>
     </div>
   );
